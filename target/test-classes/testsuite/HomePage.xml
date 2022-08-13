@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Test Suite - Custom Filters" verbose="1">
+    <test name="Custom Filters Test Scenarios" >
+        <classes>
+            <class name="com.singtel.automation.test.testcases.testng.homepage.CustomFilters">
+                <methods>
+                    <include name="_001_Verify_Filter_Screen_Message_Without_Custom_Filter" />
+                    <include name="_002_Create_New_Custom_Filter" />
+                    <include name="_003_Verify_Column_Header_Values_In_Custom_Filter_Tab" />
+                    <include name="_004_Click_Status_Filters_In_Custom_Filter_Tab_Verify_Policies_In_Page" />
+                    <include name="_005_Delete_Custom_Filter" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
