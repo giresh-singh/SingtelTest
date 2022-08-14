@@ -1,0 +1,57 @@
+# Created at 2022-08-14T19:16:16.832
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Verify adding a todo to the list.'.
+
+# Created at 2022-08-14T19:16:18.223
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".'.
+
+# Created at 2022-08-14T19:16:18.223
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: Defaulting to no-operation (NOP) logger implementation'.
+
+# Created at 2022-08-14T19:16:18.223
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: See http:'.
+
+# Created at 2022-08-14T19:16:18.223
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '//www.slf4j.org/codes.html#StaticLoggerBinder for further details.'.
+
+# Created at 2022-08-14T19:16:24.314
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 65056'.
+
+# Created at 2022-08-14T19:16:24.314
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Only local connections are allowed.'.
+
+# Created at 2022-08-14T19:16:24.314
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.'.
+
+# Created at 2022-08-14T19:16:24.314
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'ChromeDriver was started successfully.'.
+
+# Created at 2022-08-14T19:16:27.531
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Aug 14, 2022 7:16:'.
+
+# Created at 2022-08-14T19:16:27.547
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '27 PM org.openqa.selenium.remote.ProtocolHandshake createSession'.
+
+# Created at 2022-08-14T19:16:27.547
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'INFO: Detected upstream dialect:'.
+
+# Created at 2022-08-14T19:16:27.625
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'W3C'.
+
+# Created at 2022-08-14T19:16:27.913
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Aug 14, 2022 7:16:'.
+
+# Created at 2022-08-14T19:16:27.913
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch'.
+
+# Created at 2022-08-14T19:16:27.928
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'INFO: Found exact CDP implementation for version 104'.
+
+# Created at 2022-08-14T19:16:35.950
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '1 Scenarios ([32m1 passed[0m)'.
+
+# Created at 2022-08-14T19:16:35.950
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '2 Steps ([32m2 passed[0m)'.
+
+# Created at 2022-08-14T19:16:35.950
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '0m20.390s'.
+
