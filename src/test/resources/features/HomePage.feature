@@ -3,7 +3,7 @@ Feature: Test the ToDoMVC user URL for DT Testing
   Background:
     Given Open the given URL in a Browser.
 
-  @Test @Smoke
+  @Test
   Scenario Outline: Verify adding a todo to the list.
     When add the Item: "<item>" in To Do list.
     Examples:

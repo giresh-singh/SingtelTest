@@ -27,7 +27,7 @@ import java.nio.file.Paths;
         cucumberOptions = @CucumberOptions(
                 features = "src/test/resources/features/",
                 glue = "com/singtel/automation/test/stepdef",
-                tags = "@Smoke",
+                tags = "@Test",
                 publish=false
         ))
 public class TestRunner extends TestNGCourgette {
