@@ -25,7 +25,7 @@ public class WebDriverFactory
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions options=new ChromeOptions();
-                    options.setHeadless(true);
+                    options.setHeadless(false);
                     driver = new ChromeDriver(options);
                     break;
                 case "ie":

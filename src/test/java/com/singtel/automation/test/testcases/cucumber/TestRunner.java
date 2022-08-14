@@ -1,8 +1,10 @@
 package com.singtel.automation.test.testcases.cucumber;
 
+import com.singtel.automation.framework.utils.FileUtils;
 import com.singtel.automation.framework.utils.GenericHelper;
 import courgette.api.*;
 import courgette.api.testng.TestNGCourgette;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -29,12 +31,11 @@ import java.nio.file.Paths;
                 publish=false
         ))
 public class TestRunner extends TestNGCourgette {
-        @BeforeClass
+        @AfterClass
         public void copyFIle()
         {
-                GenericHelper genHelper=new GenericHelper();
-                genHelper.copyFile();
+                FileUtils.copyCourgetteReportsInHistory();
         }
 
-        }
+ }
 
