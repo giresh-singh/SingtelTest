@@ -1,6 +1,6 @@
 package com.singtel.automation.framework.engine;
 
-import com.singtel.automation.framework.utils.PropertyReader;
+import com.singtel.automation.framework.reader.PropertyReader;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 

@@ -1,8 +1,14 @@
 package com.singtel.automation.test.testcases.cucumber;
 
+import com.singtel.automation.framework.utils.GenericHelper;
 import courgette.api.*;
 import courgette.api.testng.TestNGCourgette;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 @Test
 @CourgetteOptions(
@@ -19,9 +25,16 @@ import org.testng.annotations.Test;
         cucumberOptions = @CucumberOptions(
                 features = "src/test/resources/features/",
                 glue = "com/singtel/automation/test/stepdef",
-                tags = "@Test",
+                tags = "@Smoke",
                 publish=false
         ))
 public class TestRunner extends TestNGCourgette {
-}
+        @BeforeClass
+        public void copyFIle()
+        {
+                GenericHelper genHelper=new GenericHelper();
+                genHelper.copyFile();
+        }
+
+        }
 

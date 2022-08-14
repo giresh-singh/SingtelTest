@@ -6,7 +6,7 @@ import com.singtel.automation.framework.report.ReportManagerHelper;
 import com.singtel.automation.framework.report.ReportTestHelper;
 import com.singtel.automation.test.businessfunctions.HomePage;
 import com.singtel.automation.framework.utils.GenericHelper;
-import com.singtel.automation.framework.utils.PropertyReader;
+import com.singtel.automation.framework.reader.PropertyReader;
 import org.testng.annotations.*;
 
 import java.lang.reflect.Method;

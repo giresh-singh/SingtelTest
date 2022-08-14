@@ -3,7 +3,7 @@ package com.singtel.automation.framework.engine;
 import com.singtel.automation.framework.exception.SingtelException;
 import com.singtel.automation.framework.log.LogHelper;
 import com.singtel.automation.framework.utils.GenericHelper;
-import com.singtel.automation.framework.utils.PropertyReader;
+import com.singtel.automation.framework.reader.PropertyReader;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -188,7 +188,6 @@ public class SeleniumHelper extends WebDriverFactory {
 
     public void doubleClick(WebElement ele) throws SingtelException {
         try {
-            //waitTillElementIsClickable(ele);
             Actions action = new Actions(driver);
             action.doubleClick(ele).build().perform();
         } catch (Exception e) {
@@ -287,7 +286,7 @@ public class SeleniumHelper extends WebDriverFactory {
     public boolean isDisplayed(By by) throws SingtelException {
         boolean flag = false;
         try {
-            genFunctions.wait(1);
+            genFunctions.wait(2);
             List<WebElement> eleCollection = findElementCollection(by);
             if (eleCollection.size() > 0) {
                 flag = true;
@@ -398,5 +397,10 @@ public class SeleniumHelper extends WebDriverFactory {
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].click();", ele);
         genFunctions.initialTimeWait();
+    }
+
+    public String getAttribute(By by){
+        WebElement ele = findElement(by);
+        return ele.getAttribute("class");
     }
 }

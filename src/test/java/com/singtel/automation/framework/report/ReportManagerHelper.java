@@ -5,7 +5,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.singtel.automation.framework.engine.WebDriverFactory;
 import com.singtel.automation.framework.exception.SingtelException;
 import com.singtel.automation.framework.utils.DateHelper;
-import com.singtel.automation.framework.utils.PropertyReader;
+import com.singtel.automation.framework.reader.PropertyReader;
 
 public class ReportManagerHelper extends WebDriverFactory
 {

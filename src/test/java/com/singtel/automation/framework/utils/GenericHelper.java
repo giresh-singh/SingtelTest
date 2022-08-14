@@ -1,7 +1,12 @@
 package com.singtel.automation.framework.utils;
 
 import com.singtel.automation.framework.exception.SingtelException;
+import com.singtel.automation.framework.reader.PropertyReader;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Random;
 
 public class GenericHelper {
@@ -45,5 +50,16 @@ public class GenericHelper {
             throw new SingtelException(e.getMessage());
         }
         return increasedPolicyNumber;
+    }
+
+    public void copyFile(){
+        try {
+            Path sourceDirectory = Paths.get(System.getProperty("user.dir") + "/testreport/cucumber/latest/courgette-report");
+            Path targetDirectory = Paths.get(System.getProperty("user.dir") + "/testreport/cucumber/history/courgette-report");
+            System.out.println("Source "+sourceDirectory.getName(0));
+            System.out.println("Target "+targetDirectory.getName(0));
+            Files.copy(sourceDirectory, targetDirectory);
+        }catch(IOException e) {
+        }
     }
 }

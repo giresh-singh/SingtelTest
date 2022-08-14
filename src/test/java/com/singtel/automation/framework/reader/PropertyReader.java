@@ -1,4 +1,4 @@
-package com.singtel.automation.framework.utils;
+package com.singtel.automation.framework.reader;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -24,7 +24,7 @@ public class PropertyReader {
         }
         return prop.getProperty(propertyName);
     }
-
+    /*
     public static String getPropertyValue(String type, String propertyName) {
         String environment;
         String lob;
@@ -55,4 +55,5 @@ public class PropertyReader {
 
         return getPropertyValue("api", propertyName);
     }
+     */
 }

@@ -5,7 +5,7 @@ import com.singtel.automation.test.stepdef.CucumberHooks;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
-import com.singtel.automation.framework.utils.PropertyReader;
+import com.singtel.automation.framework.reader.PropertyReader;
 
 public class ReportStepHelper extends ReportManagerHelper {
     static String framework = PropertyReader.getTestBedProperties("framework");

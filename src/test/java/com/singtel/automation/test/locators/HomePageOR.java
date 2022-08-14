@@ -11,6 +11,7 @@ public final class HomePageOR {
      * HOME PAGE
      */
     public static final By TO_DO_INPUT_BOX= By.className("new-todo");
-    //By.xpath("//label[text()='"+checkboxName+"']/ancestor::div/input")
-
+    public static final By TO_DO_FILTER_Completed= By.linkText("Completed");
+    public static final By TO_DO_FILTER_Active= By.linkText("Active");
+    public static final By TO_DO_FILTER_All= By.linkText("All");
 }

@@ -1,7 +1,7 @@
 package com.singtel.automation.test.stepdef;
 
 import com.singtel.automation.framework.engine.SeleniumHelper;
-import com.singtel.automation.framework.utils.PropertyReader;
+import com.singtel.automation.framework.reader.PropertyReader;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;

@@ -6,7 +6,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import com.singtel.automation.framework.utils.PropertyReader;
+import com.singtel.automation.framework.reader.PropertyReader;
 
 public class WebDriverFactory
 {
@@ -25,7 +25,7 @@ public class WebDriverFactory
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions options=new ChromeOptions();
-                    /*options.setHeadless(true);*/
+                    options.setHeadless(true);
                     driver = new ChromeDriver(options);
                     break;
                 case "ie":
