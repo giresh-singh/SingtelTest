@@ -7,6 +7,6 @@ Feature: Test the ToDoMVC user URL for DT Testing
     #Then check the added '<items>' is correct
     Examples:
       | items                                                |
-      | eqeqwewewrewrewfrere454tgghjweejiwru32476389roi3jkhb |
+      | Item 1 |
 
 
