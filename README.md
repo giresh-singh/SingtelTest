@@ -14,7 +14,8 @@
     <h6>Latest Report -</h6> .\singtel\testreport\cucumber\latest\courgette-report<br>
     <h6>Report History -</h6> .\singtel\testreport\cucumber\history\courgette-report<br>
 <br><b><u>Test Scenarios</u></b><br>
-    There are six scenarios created in feature file and their steps are defined in step definition file.<br>
+    There are six scenarios created in feature file and their steps are defined in step definition file.
     <h6>Feature File -</h6> .\singtel\src\test\resources\features\HomePage.feature <br>
+    <h6>Step Definition File -</h6> .\singtel\src\test\java\com\singtel\automation\test\stepdef\ToDoMVCSteps.java <br>
 <br/><b><u>Framework Architecture</u></b><br></br>
 <br/><b><u>Framework high pont</u></b><br></br>
