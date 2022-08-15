@@ -37,4 +37,19 @@
             <tr><td> Verify Completed and Active counts from todo to list</td><td>User is able to apply Active/Completed filters and match count for same in TODO List</td></tr>
         </table>
 <br/><b><u>Framework Architecture</u></b><br></br>
-<br/><b><u>Framework high pont</u></b><br></br>
+    <ul id="myUL">
+    <li><span class="caret">src</span>
+    <ul class="nested">
+      <li><span class="caret">test</span>
+        <ul class="nested">
+          <li>java -> framework and test related java codes </li>
+                <ul class="nested">
+                    <li><span class="caret">framework -> </span></li>
+                    <li><span class="caret">test -> </span></li>
+                </ul>
+          <li>resources -> like feature file framework properties file </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
