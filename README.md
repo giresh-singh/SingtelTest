@@ -11,8 +11,10 @@
     Open Intellij IDE terminal (Alt + F12). Now we can use below commands -
 <table><tr><td> ><strong> mvn clean</strong></td><tr><td>> <strong>mvn test</strong></td></tr></table>
 <b><u>Check report</u></b><br>
-    Latest Report Folder Path - .\singtel\testreport\cucumber\latest\courgette-report<br>
-    Report History - .\singtel\testreport\cucumber\history\courgette-report
-<br/><b><u>Test Scenarios</u></b><br></br>
+    <h6>Latest Report -</h6> .\singtel\testreport\cucumber\latest\courgette-report<br>
+    <h6>Report History -</h6> .\singtel\testreport\cucumber\history\courgette-report<br>
+<br><b><u>Test Scenarios</u></b><br>
+    There are six scenarios created in feature file and their steps are defined in step definition file.<br>
+    <h6>Feature File -</h6> .\singtel\src\test\resources\features\HomePage.feature <br>
 <br/><b><u>Framework Architecture</u></b><br></br>
 <br/><b><u>Framework high pont</u></b><br></br>
