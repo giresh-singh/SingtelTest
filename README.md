@@ -6,7 +6,7 @@
     Cucumber is used to supports behavior-driven development. Cucumber BDD approach is its ordinary language parser called Gherkin.<br>
     Courgette is used which browse cucumber features from within Rails app it help in reporting and parallel execution.<br>
     Dependency injection for test data context. <br>
-<b><u>Github details</u></b><br>
+<br><b><u>Github details</u></b><br>
     Repository URL - https://github.com/giresh-singh/SingtelTest
         <br>Click on Code button and choose option to download framework</br>
 <br><b><u>IDE and Env used</u></b><br> 
