@@ -74,3 +74,15 @@
     </ul>
   </li>
 </ul>
+
+<ul id="myUL">
+    <li><span class="caret">testreport</span>
+    <ul class="nested">
+      <li><span class="caret">cucumber</span>
+        <ul class="nested">
+          <li><strong>latest</strong> -> latest run report available here </li>
+          <li><strong>history</strong> -> all last run stored with date time stamp </li>
+        </ul>
+        </ul>
+      </li>
+    </ul>
