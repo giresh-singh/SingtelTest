@@ -1,5 +1,5 @@
 # Singtel Automation Framework - Selenium & Java 
-<p>Purpose of this README is to provide overview of framework, how to get framework from github, environment required, how to execute scenarios and check report and brief about framework architecture</p>
+<p>Purpose of this README is to provide overview of framework, how to get framework from github, environment required, how to execute scenarios, view report and brief about framework architecture</p>
 <b><u>Overview</u></b><br>
     Framework is developed by using Selenium-Cucumber-java.<br>
     WebDriverManager is used which carries out the management (i.e., download, setup, and maintenance) of the drivers required by Selenium WebDriver.<br>
