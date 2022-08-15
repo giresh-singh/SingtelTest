@@ -1,25 +1,31 @@
-# Singtel Automation Framework - Selenium & Java 
-<p>Purpose of this README is to provide overview of framework, how to get framework from github, environment required, how to execute scenarios, view report and brief about framework architecture</p>
-<b><u>Overview</u></b><br>
-    Framework is developed by using Selenium-Cucumber-java.<br>
-    WebDriverManager is used which carries out the management (i.e., download, setup, and maintenance) of the drivers required by Selenium WebDriver.<br>
-    Cucumber is used to supports behavior-driven development. Cucumber BDD approach is its ordinary language parser called Gherkin.<br>
-    Courgette is used which browse cucumber features from within Rails app it help in reporting and parallel execution.<br>
-    Dependency injection for test data context. <br>
-<br><b><u>Github details</u></b><br>
-    Repository URL - https://github.com/giresh-singh/SingtelTest
-        <br>Click on Code button and choose option to download framework</br>
-<br><b><u>IDE and Env used</u></b><br> 
-    IntelliJ IDEA 2021.2.1 (Community Edition), Chrome browser</br>
-<br><b><u>Execute test</u></b></br>
-    <h6>1. By using TestRunner - </h6> TestRunner.java file is available on below path - <i>src/test/java/com/singtel/automation/test/testcases/cucumber/TestRunner.java</i><br> Mouse right click and choose option Run TestRunner</br>
-<h6>2. By using 'mvn test' command  - </h6> 
-    Open Intellij IDE terminal (Alt + F12). Now we can use below commands -
-<table><tr><td> ><strong> mvn clean</strong></td><tr><td>> <strong>mvn test</strong></td></tr></table>
+# Singtel Automation Framework - Selenium & Java # 
+Purpose of this README is to provide overview of framework, how to get framework from github, environment required, how to execute scenarios, view report and brief about framework architecture.
+### Overview: ###
+Framework is developed by using Selenium-Cucumber-java.
+* WebDriverManager is used which carries out the management (i.e., download, setup, and maintenance) of the drivers required by Selenium WebDriver.
+* Cucumber is used to supports behavior-driven development. Cucumber BDD approach is its ordinary language parser called Gherkin.
+* Courgette is used for parallel execution and cucumber report generation.
+* Dependency injection for test data context.
+
+<b><u>Repository URL:</b></u><br>https://github.com/giresh-singh/SingtelTest </br>
+Click on Code button and choose option to download framework
+
+<b><u>Pre-requisite (IDE and Test Bed):</u></b> 
+* IntelliJ IDEA 2021.2.1 (Community Edition)
+* JDK 1.8 
+* Chrome browser
+
+<b><u>Execute Test:</u></b></br>
+    <h6>1. Using TestRunner:</h6> TestRunner.java file is available on below path - <i>src/test/java/com/singtel/automation/test/testcases/cucumber/TestRunner.java</i><br> Mouse right click and choose option Run TestRunner</br>
+    <h6>2. Using command-line:</h6> 
+    Open Intellij IDE terminal (Alt + F12). Execute below command:
+    <br><b>mvn clean test</b>
+
 <b><u>Check report</u></b><br>
-    <h6>Latest Report -</h6> .\singtel\testreport\cucumber\latest\courgette-report<br>
-    <h6>Report History -</h6> .\singtel\testreport\cucumber\history\courgette-report<br>
-<br><b><u>Test Scenarios</u></b><br>
+    <h6>Latest Report:</h6> .\singtel\testreport\cucumber\latest\courgette-report<br>
+    <h6>Report History:</h6> .\singtel\testreport\cucumber\history\courgette-report<br>
+
+<b><u>Test Scenarios</u></b><br>
     There are six scenarios created in feature file and their steps are defined in step definition file.
     <h6>Feature File -</h6> .\singtel\src\test\resources\features\HomePage.feature <br>
     <h6>Step Definition File -</h6> .\singtel\src\test\java\com\singtel\automation\test\stepdef\ToDoMVCSteps.java <br>
@@ -29,59 +35,58 @@
                 <th>Scenario</th>
                 <th>Objective</th>
               </tr>
-            <tr><td> Verify adding a todo to the list</td><td>User is able to add a item in TODO List</td></tr>
-            <tr><td> Verify marking the item in the list complete</td><td>User is able to mark complete a item from TODO list</td></tr>
-            <tr><td> Verify Completed item marked Active</td><td>User is able to change Completed item into Active status by clicking again on Completed Item</td></tr>
-            <tr><td> Verify delete item from to do list</td><td>User is able to Delete an item from TODO List</td></tr>
-            <tr><td> Verify multiple items adding a todo to the list</td><td>User is able to add multiple items in TODO List</td></tr>
-            <tr><td> Verify Completed and Active counts from todo to list</td><td>User is able to apply Active/Completed filters and match count for same in TODO List</td></tr>
+            <tr><td> Add an item in ToDo list.</td><td>User is able to add an item in ToDo list.</td></tr>
+            <tr><td> Mark an added item in ToDo list as 'Complete'.</td><td>User is able to mark an item as 'complete' in ToDo list.</td></tr>
+            <tr><td> Mark a completed item in ToDo list as 'Active'.</td><td>User is able to mark a complete item as 'Active' by clicking again in ToDo list.</td></tr>
+            <tr><td> Delete an item from ToDo list.</td><td>User is able to delete an item from ToDo list.</td></tr>
+            <tr><td> Add multiple items in ToDo List.</td><td>User is able to add multiple items in ToDo list.</td></tr>
+            <tr><td> Apply 'Active'/'Completed' filter and verify count in ToDo list.</td><td>User is able to apply 'Active'/'Completed' filters and match count for same in ToDo list.</td></tr>
         </table>
-<br/><b><u>Framework Architecture</u></b><br></br>
+
+<b><u>Framework Architecture</u></b>
     <ul id="myUL">
     <li><span class="caret">src</span>
     <ul class="nested">
       <li><span class="caret">test</span>
         <ul class="nested">
-          <li>java -> framework and test related java codes </li>
+          <li>java</li>
                 <ul class="nested">
-                    <li><span class="caret">framework -> Driver, log, read, report and util codes</span></li>
+                    <li><span class="caret">framework</li>
                          <ul class="nested">
-                            <li><span class="caret"><strong>engine</strong> -> WebDriver Factory, SeleniumHelper and ReRunHelper classes </span></li>
-                            <li><span class="caret"><strong>exception</strong> -> Exception handle class </span></li>
-                            <li><span class="caret"><strong>log</strong> -> logHelper class </span></li>
-                            <li><span class="caret"><strong>reader</strong> -> PropertyReader class </span></li>
-                            <li><span class="caret"><strong>report</strong> -> reportManagerHelper, ReportStepHelper, ReportTestHelper class </span></li>
-                            <li><span class="caret"><strong>utils</strong> -> DateHelper,FileUtil,GenericHelper class </span></li>
+                            <li><span class="caret"><strong>engine</strong> - Intialize webdriver and related selenium operations</span></li>
+                            <li><span class="caret"><strong>exception</strong> - Exception handling</span></li>
+                            <li><span class="caret"><strong>log</strong> - Execution log</span></li>
+                            <li><span class="caret"><strong>reader</strong> - Read properties file</span></li>
+                            <li><span class="caret"><strong>report</strong> - Report generation/management</span></li>
+                            <li><span class="caret"><strong>utils</strong> - Generic utilities</span></li>
                          </ul>
-                    <li><span class="caret">test -> </span></li>
+                    <li><span class="caret">test</span></li>
                      <ul class="nested">
-                        <li><span class="caret"><strong>businessfunctions</strong> -> DateHelper,FileUtil,GenericHelper class </span></li>
-                        <li><span class="caret"><strong>constant</strong> -> Any constant need to define </span></li>
-                        <li><span class="caret"><strong>cucumbercontext</strong> -> Context,ScenarioContext and TestContext  class </span></li>
-                        <li><span class="caret"><strong>locators</strong> -> Static page wise locators class </span></li>
-                        <li><span class="caret"><strong>stepdef</strong> -> Step Definition class for feature file </span></li>
-                        <li><span class="caret"><strong>testcases</strong> -> TestRunner class in cucumber folder </span></li>
+                        <li><span class="caret"><strong>businessfunctions</strong> - UI workflow functions</span></li>
+                        <li><span class="caret"><strong>constant</strong> - Data constant</span></li>
+                        <li><span class="caret"><strong>cucumbercontext</strong> - Test Data sharing between scenarios</span></li>
+                        <li><span class="caret"><strong>locators</strong> - UI page wise object locators</span></li>
+                        <li><span class="caret"><strong>stepdef</strong> - Step definition mapping for feature file</span></li>
+                        <li><span class="caret"><strong>testcases</strong> - Cucumber TestRunner</span></li>
                     </ul>
                 </ul>
-          <li>resources -> like feature file framework properties file </li>
+          <li>resources</li>
             <ul class="nested">
-                <li><span class="caret"><strong>features</strong> -> Feature file </span></li>
-                <li><span class="caret"><strong>properties</strong> -> Log4j and TestBed related properties files </span></li>
-                <li><span class="caret"><strong>testsuite</strong> -> Not in use for this project </span></li>
+                <li><span class="caret"><strong>features</strong> - Scenario feature file</span></li>
+                <li><span class="caret"><strong>properties</strong> - Log4j and TestBed properties</span></li>
             </ul>
         </ul>
       </li>
     </ul>
   </li>
-</ul>
 
 <ul id="myUL">
     <li><span class="caret">testreport</span>
     <ul class="nested">
       <li><span class="caret">cucumber</span>
         <ul class="nested">
-          <li><strong>latest</strong> -> latest run report available here </li>
-          <li><strong>history</strong> -> all last run stored with date time stamp </li>
+          <li><strong>latest</strong> - latest executed report</li>
+          <li><strong>history</strong> - previous execution reports</li>
         </ul>
         </ul>
       </li>
