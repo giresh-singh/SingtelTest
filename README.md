@@ -49,21 +49,26 @@
                             <li><span class="caret"><strong>engine</strong> -> WebDriver Factory, SeleniumHelper and ReRunHelper classes </span></li>
                             <li><span class="caret"><strong>exception</strong> -> Exception handle class </span></li>
                             <li><span class="caret"><strong>log</strong> -> logHelper class </span></li>
-                            <li><span class="caret">reader -> PropertyReader class </span></li>
-                            <li><span class="caret">report -> reportManagerHelper, ReportStepHelper, ReportTestHelper class </span></li>
-                            <li><span class="caret">utils -> DateHelper,FileUtil,GenericHelper class </span></li>
+                            <li><span class="caret"><strong>reader</strong> -> PropertyReader class </span></li>
+                            <li><span class="caret"><strong>report</strong> -> reportManagerHelper, ReportStepHelper, ReportTestHelper class </span></li>
+                            <li><span class="caret"><strong>utils</strong> -> DateHelper,FileUtil,GenericHelper class </span></li>
                          </ul>
                     <li><span class="caret">test -> </span></li>
                      <ul class="nested">
-                        <li><span class="caret">businessfunctions -> DateHelper,FileUtil,GenericHelper class </span></li>
-                        <li><span class="caret">constant -> Any constant need to define </span></li>
-                        <li><span class="caret">cucumbercontext -> Context,ScenarioContext and TestContext  class </span></li>
-                        <li><span class="caret">locators -> Static page wise locators class </span></li>
-                        <li><span class="caret">stepdef -> Step Definition class for feature file </span></li>
-                        <li><span class="caret">testcases -> TestRunner class in cucumber folder </span></li>
+                        <li><span class="caret"><strong>businessfunctions</strong> -> DateHelper,FileUtil,GenericHelper class </span></li>
+                        <li><span class="caret"><strong>constant</strong> -> Any constant need to define </span></li>
+                        <li><span class="caret"><strong>cucumbercontext</strong> -> Context,ScenarioContext and TestContext  class </span></li>
+                        <li><span class="caret"><strong>locators</strong> -> Static page wise locators class </span></li>
+                        <li><span class="caret"><strong>stepdef</strong> -> Step Definition class for feature file </span></li>
+                        <li><span class="caret"><strong>testcases</strong> -> TestRunner class in cucumber folder </span></li>
                     </ul>
                 </ul>
           <li>resources -> like feature file framework properties file </li>
+            <ul class="nested">
+                <li><span class="caret"><strong>features</strong> -> Feature file </span></li>
+                <li><span class="caret"><strong>properties</strong> -> Log4j and TestBed related properties files </span></li>
+                <li><span class="caret"><strong>testsuite</strong> -> Not in use for this project </span></li>
+            </ul>
         </ul>
       </li>
     </ul>
