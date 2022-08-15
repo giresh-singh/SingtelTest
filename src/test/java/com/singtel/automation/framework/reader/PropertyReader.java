@@ -24,36 +24,4 @@ public class PropertyReader {
         }
         return prop.getProperty(propertyName);
     }
-    /*
-    public static String getPropertyValue(String type, String propertyName) {
-        String environment;
-        String lob;
-
-        environment = System.getProperty("env");
-        lob = System.getProperty("lob");
-        if (environment == null || lob == null) {
-            lob = getTestBedProperties("lob").toLowerCase();
-            environment = getTestBedProperties("environment").toUpperCase();
-            System.setProperty("lob", lob);
-            System.setProperty("env", environment);
-        }
-        Properties prop = new Properties();
-        try {
-            prop.load(getPropertiesFromFile(propertiesFolder + type + "/" + lob + "/" + environment + ".properties"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return prop.getProperty(propertyName);
-    }
-
-    public static String getEnvProperties(String propertyName) {
-
-        return getPropertyValue("env", propertyName);
-    }
-
-    public static String getApiProperties(String propertyName) {
-
-        return getPropertyValue("api", propertyName);
-    }
-     */
 }
