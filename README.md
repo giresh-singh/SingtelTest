@@ -10,7 +10,9 @@
 <h6>2. By using 'mvn test' command  - </h6> 
     Open Intellij IDE terminal (Alt + F12). Now we can use below commands -
 <table><tr><td> ><strong> mvn clean</strong></td><tr><td>> <strong>mvn test</strong></td></tr></table>
-<br/><b><u>Check report</u></b><br></br>
+<b><u>Check report</u></b><br>
+    Latest Report Folder Path - .\singtel\testreport\cucumber\latest\courgette-report<br>
+    Report History - .\singtel\testreport\cucumber\history\courgette-report
 <br/><b><u>Test Scenarios</u></b><br></br>
 <br/><b><u>Framework Architecture</u></b><br></br>
 <br/><b><u>Framework high pont</u></b><br></br>
