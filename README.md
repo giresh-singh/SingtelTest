@@ -17,5 +17,14 @@
     There are six scenarios created in feature file and their steps are defined in step definition file.
     <h6>Feature File -</h6> .\singtel\src\test\resources\features\HomePage.feature <br>
     <h6>Step Definition File -</h6> .\singtel\src\test\java\com\singtel\automation\test\stepdef\ToDoMVCSteps.java <br>
+    <h6>Scenario Outlines -</h6> 
+        <table>
+            <tr><td> Verify adding a todo to the list</td>
+            <tr><td> Verify marking the item in the list complete</td></tr>
+            <tr><td> Verify Completed item marked Active</td></tr>
+            <tr><td> Verify delete item from to do list</td></tr>
+            <tr><td> Verify multiple items adding a todo to the list</td></tr>
+            <tr><td> Verify Completed and Active counts from todo to list</td></tr>
+        </table>
 <br/><b><u>Framework Architecture</u></b><br></br>
 <br/><b><u>Framework high pont</u></b><br></br>
