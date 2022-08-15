@@ -1,5 +1,5 @@
 # Singtel Automation Framework - Selenium & Java 
-<p>Purpose of this README is to provide helps on below items</p>
+<p>Purpose of this README is to provide overview of framework, how to get framework from github, environment required, how to execute scenarios and check report and brief about framework architecture</p>
 <b><u>Overview</u></b><br>
     Framework is developed by using Selenium-Cucumber-java.<br>
     WebDriverManager is used which carries out the management (i.e., download, setup, and maintenance) of the drivers required by Selenium WebDriver.<br>
@@ -10,7 +10,7 @@
     Repository URL - https://github.com/giresh-singh/SingtelTest
         <br>Click on Code button and choose option to download framework</br>
 <br><b><u>IDE and Env used</u></b><br> 
-    IntelliJ IDEA 2021.2.1 (Community Edition)</br>
+    IntelliJ IDEA 2021.2.1 (Community Edition), Chrome browser</br>
 <br><b><u>Execute test</u></b></br>
     <h6>1. By using TestRunner - </h6> TestRunner.java file is available on below path - <i>src/test/java/com/singtel/automation/test/testcases/cucumber/TestRunner.java</i><br> Mouse right click and choose option Run TestRunner</br>
 <h6>2. By using 'mvn test' command  - </h6> 
