@@ -44,8 +44,24 @@
         <ul class="nested">
           <li>java -> framework and test related java codes </li>
                 <ul class="nested">
-                    <li><span class="caret">framework -> </span></li>
+                    <li><span class="caret">framework -> Driver, log, read, report and util codes</span></li>
+                         <ul class="nested">
+                            <li><span class="caret">engine -> WebDriver Factory, SeleniumHelper and ReRunHelper classes </span></li>
+                            <li><span class="caret">exception -> Exception handle class </span></li>
+                            <li><span class="caret">log -> logHelper class </span></li>
+                            <li><span class="caret">reader -> PropertyReader class </span></li>
+                            <li><span class="caret">report -> reportManagerHelper, ReportStepHelper, ReportTestHelper class </span></li>
+                            <li><span class="caret">utils -> DateHelper,FileUtil,GenericHelper class </span></li>
+                         </ul>
                     <li><span class="caret">test -> </span></li>
+                     <ul class="nested">
+                        <li><span class="caret">businessfunctions -> DateHelper,FileUtil,GenericHelper class </span></li>
+                        <li><span class="caret">constant -> Any constant need to define </span></li>
+                        <li><span class="caret">cucumbercontext -> Context,ScenarioContext and TestContext  class </span></li>
+                        <li><span class="caret">locators -> Static page wise locators class </span></li>
+                        <li><span class="caret">stepdef -> Step Definition class for feature file </span></li>
+                        <li><span class="caret">testcases -> TestRunner class in cucumber folder </span></li>
+                    </ul>
                 </ul>
           <li>resources -> like feature file framework properties file </li>
         </ul>
