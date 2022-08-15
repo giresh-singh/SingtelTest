@@ -46,9 +46,9 @@
                 <ul class="nested">
                     <li><span class="caret">framework -> Driver, log, read, report and util codes</span></li>
                          <ul class="nested">
-                            <li><span class="caret">engine -> WebDriver Factory, SeleniumHelper and ReRunHelper classes </span></li>
-                            <li><span class="caret">exception -> Exception handle class </span></li>
-                            <li><span class="caret">log -> logHelper class </span></li>
+                            <li><span class="caret"><strong>engine</strong> -> WebDriver Factory, SeleniumHelper and ReRunHelper classes </span></li>
+                            <li><span class="caret"><strong>exception</strong> -> Exception handle class </span></li>
+                            <li><span class="caret"><strong>log</strong> -> logHelper class </span></li>
                             <li><span class="caret">reader -> PropertyReader class </span></li>
                             <li><span class="caret">report -> reportManagerHelper, ReportStepHelper, ReportTestHelper class </span></li>
                             <li><span class="caret">utils -> DateHelper,FileUtil,GenericHelper class </span></li>
