@@ -1,5 +1,11 @@
 # Singtel Automation Framework - Selenium & Java 
 <p>Purpose of this README is to provide helps on below items</p>
+<b><u>Overview</u></b><br>
+    Framework is developed by using Selenium-Cucumber-java.<br>
+    WebDriverManager is used which carries out the management (i.e., download, setup, and maintenance) of the drivers required by Selenium WebDriver.<br>
+    Cucumber is used to supports behavior-driven development. Cucumber BDD approach is its ordinary language parser called Gherkin.<br>
+    Courgette is used which browse cucumber features from within Rails app it help in reporting and parallel execution.<br>
+    Dependency injection for test data context. <br>
 <b><u>Github details</u></b><br>
     Repository URL - https://github.com/giresh-singh/SingtelTest
         <br>Click on Code button and choose option to download framework</br>
@@ -19,12 +25,16 @@
     <h6>Step Definition File -</h6> .\singtel\src\test\java\com\singtel\automation\test\stepdef\ToDoMVCSteps.java <br>
     <h6>Scenario Outlines -</h6> 
         <table>
-            <tr><td> Verify adding a todo to the list</td>
-            <tr><td> Verify marking the item in the list complete</td></tr>
-            <tr><td> Verify Completed item marked Active</td></tr>
-            <tr><td> Verify delete item from to do list</td></tr>
-            <tr><td> Verify multiple items adding a todo to the list</td></tr>
-            <tr><td> Verify Completed and Active counts from todo to list</td></tr>
+            <tr>
+                <th>Scenario</th>
+                <th>Objective</th>
+              </tr>
+            <tr><td> Verify adding a todo to the list</td><td>User is able to add a item in TODO List</td></tr>
+            <tr><td> Verify marking the item in the list complete</td><td>User is able to mark complete a item from TODO list</td></tr>
+            <tr><td> Verify Completed item marked Active</td><td>User is able to change Completed item into Active status by clicking again on Completed Item</td></tr>
+            <tr><td> Verify delete item from to do list</td><td>User is able to Delete an item from TODO List</td></tr>
+            <tr><td> Verify multiple items adding a todo to the list</td><td>User is able to add multiple items in TODO List</td></tr>
+            <tr><td> Verify Completed and Active counts from todo to list</td><td>User is able to apply Active/Completed filters and match count for same in TODO List</td></tr>
         </table>
 <br/><b><u>Framework Architecture</u></b><br></br>
 <br/><b><u>Framework high pont</u></b><br></br>
